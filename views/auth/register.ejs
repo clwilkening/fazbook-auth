@@ -2,34 +2,46 @@
   <body>
     <% include ../partials/header.ejs %>
     <main>
-      <div class="container">
-        <form action="/auth/register" method="post">
-          <div>
-            <label>Username:</label>
-            <input type="text" name="username"/>
+      <div class="container row">
+        <form class="col s12 m12 l13" action="/auth/register" method="post">
+          <div class="row">
+            <div class="input-field col s12">
+              <h5 class="label col s3">Username:</h5>
+              <input id="input_text" type="text" name="username" class="input-field col s9"/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <h5 class="label col s3">Password:</h5>
+              <input id="input_text" type="password" name="password" class="input-field col s9"/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <h5 class="label col s3">First Name:</h5>
+              <input id="input_text" type="text" name="firstName" class="input-field col s9"/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <h5 class="label col s3">Last Name:</h5>
+              <input id="input_text" type="text" name="lastName" class="input-field col s9"/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <h5 class="label col s3">Email:</h5>
+              <input id="input_text" type="text" name="email" class="input-field col s9"/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <h5 class="label col s3">Date of Birth:</h5>
+              <input type="date" class="datepicker" name="dob" class="input-field col s9"/>
+            </div>
           </div>
           <div>
-            <label>Password:</label>
-            <input type="password" name="password"/>
-          </div>
-          <div>
-            <label>First Name:</label>
-            <input type="text" name="firstName"/>
-          </div>
-          <div>
-            <label>Last Name:</label>
-            <input type="text" name="lastName"/>
-          </div>
-          <div>
-            <label>Email:</label>
-            <input type="text" name="email"/>
-          </div>
-          <div>
-            <label>Date of Birth:</label>
-            <input type="date" name="dob"/>
-          </div>
-          <div>
-            <input type="submit" value="Register"/>
+            <input class="waves-effect waves-light green lighten-1 btn-large" type="submit" value="Register"/>
           </div>
         </form>
       </div>

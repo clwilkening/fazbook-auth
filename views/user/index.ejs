@@ -3,14 +3,18 @@
     <% include ../partials/header.ejs %>
     <main>
       <div class="container">
-        <p>Hello, this is the user profile page!</p>
-        <p><%= user.firstName %></p>
-        <p><%= user.lastName %></p>
+        <p>User Profile</p>
+        <div class="row">
+        <h5 class="col s12 m2 l2"><%= user.firstName %></h5>
+        <h5 class="col s12 m2 l2"><%= user.lastName %></h5>
+        </div>
         <p><%= user.email %></p>
         <p><%= user.dob %></p>
-        <a href="/auth/logout">LOG OUT</a>
+        <a class="btn waves-effect waves-light red darken-1" href="/auth/logout">LOG OUT</a>
       </div>
     </main>
     <% include ../partials/footer.ejs %>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
   </body>
 </html>

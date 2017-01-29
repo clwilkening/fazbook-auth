@@ -3,17 +3,17 @@
     <% include ../partials/header.ejs %>
     <main>
       <div class="container">
-        <form action="/auth/login" method="post">
-          <div>
-            <label>Username:</label>
+        <form class="row center-align" action="/auth/login" method="post">
+          <div class="input-field col s6 offset-s3">
+            <h5 class="label">Username:</h5>
             <input type="text" name="username"/>
           </div>
-          <div>
-            <label>Password:</label>
+          <div class="input-field col s6 offset-s3">
+            <h5 class="label">Password:</h5>
             <input type="password" name="password"/>
           </div>
-          <div>
-            <input type="submit" value="Log In"/>
+          <div class="col s12">
+            <input class="waves-effect waves-light green lighten-1 btn-large" type="submit" value="Log In"/>
           </div>
         </form>
       </div>

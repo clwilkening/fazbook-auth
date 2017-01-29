@@ -2,11 +2,13 @@
   <body>
     <% include partials/header.ejs %>
     <main>
-      <div class="container">
-        <p>Hello, this is the main index page!</p>
-        <p><a href="/auth/register">click here to register</a></p>
-        <p><a href="/auth/login">click here to log in</a></p>
-        <p><a href="/auth/logout">click here to logout</a></p>
+      <div class="container center-align row">
+        <h4>Home Page</h4>
+        <div class="divider"></div>
+          <h5 class="col s12 m12 l12"><a class="waves-effect waves-light btn-large green lighten-1 white-text" href="/auth/register">register</a></h5>
+          <h5 class="col s12 m12 l12"><a class="waves-effect waves-light btn-large green lighten-1 white-text" href="/auth/login">log in</a></h5>
+          <h5 class="col s12 m12 l12"><a class="waves-effect waves-light btn-large red lighten-1 white-text" href="/auth/logout">logout</a></h5>
+        <div class="divider"></div>
       </div>
     </main>
     <% include partials/footer.ejs %>
